@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/assets/styles/style.css">
+
+    <!-- I put them here now, will move them later: -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <!-- NAVIGATION BAR: -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="btn btn-outline-secondary favourite-city" type="submit">
+            <img src="src/assets/buttons-icons/star.svg"  alt="">
+            <span>Favourite City</span>
+        </button>
+
+        <button class="btn btn-outline-secondary current-location ml-1" type="submit">
+            <img src="src/assets/buttons-icons/location-icon.svg" alt="">
+            <span>Current Location</span>
+        </button>
+
+        <ul class="navbar-nav my-2 my-lg-0 ml-auto city-buttons-section">
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="">Sofia</a> -->
+                <button type="button" class="btn btn-outline-secondary    sofia city-button">Sofia</button>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="">Plovdiv</a> -->
+                <button type="button" class="btn btn-outline-secondary    sofia city-button">Plovdiv</button>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="">Varna</a> -->
+                <button type="button" class="btn btn-outline-secondary    sofia city-button">Varna</button>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="">Burgas</a> -->
+                <button type="button" class="btn btn-outline-secondary    sofia city-button">Burgas</button>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="">Pleven</a> -->
+                <button type="button" class="btn btn-outline-secondary    sofia city-button">Pleven</button>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="">Kazanlak</a> -->
+                <button type="button" class="btn btn-outline-secondary    sofia city-button">Kazanlak</button>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="">Berlin</a> -->
+                <button type="button" class="btn btn-outline-secondary    sofia city-button">Berlin</button>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="">London</a> -->
+                <button type="button" class="btn btn-outline-secondary    sofia city-button">London</button>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="">Paris</a> -->
+                <button type="button" class="btn btn-outline-secondary    sofia city-button">Paris</button>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="">Rome</a> -->
+                <button type="button" class="btn btn-outline-secondary    sofia city-button">Rome</button>
+            </li>
+        </ul>
+
+        <div class="form-inline my-2 my-sm-0     ml-auto">
+            <input class="form-control mr-sm-2 city-input-form" type="search city" placeholder="search city" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0  search-button" type="submit" name="button">
+                <img src="src/assets/buttons-icons/search-icon.svg" alt="">
+            </button>
+        </div> 
+    </nav>
+
+
+
+
+    <!-- CURRENT WEATHER -->
+    <section class="container current-weather-container">
+        <div class="row      text-center">
+            <div class="col-md            clock">
+                <p id="day-in-words">Monday</p>
+                <p id="date">11/11/1111</p>
+                <div class="container clock-container"> 
+                <!-- <div class="analog-clock">
+                    <img class="hands" id="minutes-hand" src="/src/assets/clock-icons/hoursHand-small.png" alt="">
+                    <img class="hands" id="hours-hand" src="/src/assets/clock-icons/minutesHand-small.png" alt="">
+                </div> -->
+            </div>
+            <!-- <p id="hour-in-digits">11:11</p> -->
+            <p id="sunrise">Sunrise: 11:11</p>
+            <p id="sunset">Sunset: 11:11</p>
+
+        </div>
+        <div class="col-md current-weather">
+            <h2 id="current-city">Bora-Bora</h2>
+            <h3>99°</h3>
+            <img class="current-weather-icon" src="./src/assets/weather-icons/01d.svg">
+            <p id="current-weather-words">Rain Rain</p>
+        </div>
+        <div class="col-md    more-info">
+            <p id="wind">Wind: 111</p>
+            <p id="humidity">Humidity: 11</p>
+            <p id="pressure">Pressure: 111</p>
+            <!-- <p id="sunrise">Sunrise: 11:11</p>
+            <p id="sunset">Sunset: 11:11</p> -->
+        </div>
+        </div>
+    </section>
+    
+    <hr>
+
+
+    <!-- EVERY 3 HOURS FORECAST -->
+    <section class="container          three-hours-container">
+        <div class="row      text-center">
+            <div class="col-sm               every-3-hours-forecast">
+                <h6 id="firstTime"></h6>
+                <img class="every-3-hours-icons" id="first">
+                <h5 class="col-sm" id="firstTemp"></h5>
+            </div>
+            <div class="col-sm               every-3-hours-forecast">
+                <h6 id="secondTime">11:11</h6>
+                <img class="every-3-hours-icons" id="second">
+                <h5 class="col-sm" id="secondTemp"></h5>
+            </div>
+            <div class="col-sm               every-3-hours-forecast">
+                <h6 id="thirdTime">11:11</h6>
+                <img class="every-3-hours-icons" id="third">
+                <h5 class="col-sm" id="thirdTemp"></h5>
+            </div>
+            <div class="col-sm               every-3-hours-forecast">
+                <h6 id="fourthTime">11:11</h6>
+                <img class="every-3-hours-icons" id="fourth">
+                <h5 class="col-sm" id="fourthTemp"></h5>
+            </div>
+            <div class="col-sm               every-3-hours-forecast">
+                <h6 id="fifthTime">11:11</h6>
+                <img class="every-3-hours-icons" id="fifth">
+                <h5 class="col-sm" id="fifthTemp"></h5>
+            </div>
+            <div class="col-sm               every-3-hours-forecast">
+                <h6 id="sixthTime">11:11</h6>
+                <img class="every-3-hours-icons" id="sixth">
+                <h5 class="col-sm" id="sixthTemp"></h5>
+            </div>
+            <div class="col-sm               every-3-hours-forecast">
+                <h6 id="seventhTime">11:11</h6>
+                <img class="every-3-hours-icons" id="seventh">
+                <h5 class="col-sm" id="seventhTemp"></h5>
+            </div>
+            <div class="col-sm               every-3-hours-forecast">
+                <h6 id="eighthTime">11:11</h6>
+                <img class="every-3-hours-icons" id="eighth">
+                <h5 class="col-sm" id="eighthTemp"></h5>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+
+
+    <!-- NEXT 5 DAYS FORECAST -->
+    <section class="container    five-days-container">
+        <div class="row      text-center">
+            <div class="col-sm               five-days-forecast">
+                <h3 id="first-day-name"></h3>
+                <img class="five-days-icons-img" id="first-day-icon" alt="">
+                <!-- <h5>Fog</h5> -->
+                <p class="max-min-temp" id="first-day"></p>
+            </div>
+
+
+            <div class="col-sm               five-days-forecast">
+                <h3 id="second-day-name"></h3>
+                <img class="five-days-icons-img" id="second-day-icon" alt="">
+                <!-- <h5>Fog</h5> -->
+                <p class="max-min-temp" id="second-day"></p>
+            </div>
+
+            <div class="col-sm               five-days-forecast">
+                <h3 id="third-day-name"></h3>
+                <img class="five-days-icons-img" id="third-day-icon" alt="">
+                <!-- <h5>Fog</h5> -->
+                <p class="max-min-temp" id="third-day"></p>
+            </div>
+
+            <div class="col-sm               five-days-forecast">
+                <h3 id="fourth-day-name"></h3>
+                <img class="five-days-icons-img" id="fourth-day-icon" alt="">
+                <!-- <h5>Fog</h5> -->
+                <p class="max-min-temp" id="fourth-day"></p>
+            </div>
+
+            <div class="col-sm               five-days-forecast">
+                <h3 id="fifth-day-name"></h3>
+                <img class="five-days-icons-img" id="fifth-day-icon" alt="">
+                <!-- <h5>Fog</h5> -->
+                <p class="max-min-temp" id="fifth-day"></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- FOOTER: -->
+    <nav class="navbar navbar-expand-lg fixed-bottom navbar-light bg-light">
+        <p class="nav-link my-footer-text">created by:</p>
+        <ul class="navbar-nav ml-auto mr-auto .flex-fill">
+            <li class="nav-item my-footer-names">
+                <a class="nav-link" href="https://www.linkedin.com/in/michailmishev/">Michail Mishev</a>
+            </li>
+        </ul>
+        <p class="nav-link my-footer-text">© 2019</p>
+    </nav>
+
+    <!-- jQuery: -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- js-file-at-the-bottom-of-the-body -->
+    <script src="/src/main.js" type="module"></script>
+
+</body>
+
+</html>
+

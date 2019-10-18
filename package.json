@@ -1,0 +1,23 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "bootstrap": "^4.3.1",
+    "eslint": "^5.15.1",
+    "eslit": "^6.0.0",
+    "jquery": "^3.3.1",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.29",
+    "eslint-config-google": "^0.12.0"
+  },
+  "description": ""
+}

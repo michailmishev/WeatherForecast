@@ -1,0 +1,166 @@
+/* body {
+    background-image: url(/src/assets/background-images/stars.jpg)
+} */
+
+
+/* current weather */
+h2 {
+    padding: 15px;
+}
+
+#day-in-words {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+#hour-in-digits {
+    font-size: 20px;
+}
+
+/* .clock-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+/* .analog-clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: url(clockFace-small.png);
+} */
+
+/* #minutes-hand {
+    position: absolute;
+    bottom: 45%;
+}
+#hours-hand {
+    position: relative;
+    bottom: -10%;
+} */
+
+
+#current-city {
+    color: grey;
+    font-size: 3.1rem;
+    font-weight: 300;
+}
+
+.current-weather h3 {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.current-weather-icon {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#current-weather-words {
+    font-size: 26px;
+    padding-top: 0.8rem;
+    font-weight: 350;
+}
+
+.more-info {
+    padding: 15px;
+    font-size: 20px;
+    padding-top: 190px;
+    font-weight: 300;
+}
+
+
+.current-weather-container {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    color: grey;
+}
+
+
+.clock {
+    padding-top: 160px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+/* every-3-hours-forecast: */
+.every-3-hours-icons{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.three-hours-container {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    color: grey;
+}
+
+
+
+
+/* 5-DAYS-FORECAST: */
+
+h3 {
+    color: grey;
+}
+
+.five-days-icons-img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    /* border: 1px solid green; */
+  }
+
+.max-min-temp {
+    font-size: 1.5em;
+    color: grey;
+}
+
+.five-days-forecast {
+    /* border: 1px solid red; */
+}
+
+.five-days-container {
+    padding-bottom: 9rem;
+}
+
+
+
+
+/* FOOTER: */
+
+.my-footer-text {
+    font-size: 13px;
+    color: grey;
+    margin: 0;
+    padding: 0;
+}
+
+.my-footer-names {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#background{
+    filter:blur(8px);
+}
+
+
+
+/* Sections Separator (line) */
+hr {
+    /* border: dotted lightgrey 6px; */
+    border: lightgrey 6px;
+    border-bottom: none;
+    width: 14%;
+    margin: 100px auto;
+  }
+  
