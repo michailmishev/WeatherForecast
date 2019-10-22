@@ -2,7 +2,7 @@
 
 ### WeatherForecast is a web application written in JavaScript.
 
-User can choose a destination by clickin on large city buttons, current location button or typing in the search bar. Once the destination is picked up, the main section of the page shows real time temperature and some more weather details. Scroling down the user can see forecast for every 3 hours and for the next five days. The technologies used for writing the application are HTML, CSS, JavaScript, Bootstrap. The page is using openweathermap.org for the API calls.
+User can choose a destination by clicking on large city buttons, current location button or typing in the search bar. Once the destination is picked up, the main section of the page shows real time temperature and some more weather details. Scroling down the user can see forecast for every 3 hours and for the next five days. The technologies used for writing the application are HTML, CSS, JavaScript, Bootstrap. The page is using openweathermap.org for the API calls.
 
 <br />
 
